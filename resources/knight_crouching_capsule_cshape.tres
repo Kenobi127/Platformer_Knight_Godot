@@ -1,0 +1,6 @@
+[gd_resource type="CapsuleShape2D" format=3 uid="uid://dcyf2ogy6i62v"]
+
+[resource]
+custom_solver_bias = 1.0
+radius = 7.0
+height = 27.0
