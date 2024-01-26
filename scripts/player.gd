@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var terminal_velocity = 300
 @export var friction = 18
 @export var gravity = 30
-@export var jump_force = 400
+@export var jump_velocity = 400
 @export var max_jumps = 2
 @export var start_position = Vector2(64, 64)
 
@@ -46,7 +46,7 @@ func _physics_process(delta):
 	
 	#jumping mechanics
 	if Input.is_action_just_pressed("jump") && jump_num > 0 && !is_crouching: 
-		velocity.y = -jump_force
+		velocity.y = -jump_velocity
 		jump_num -= 1
 
 	
